@@ -1,6 +1,13 @@
-
 <div ng-controller="Ctrl as ctrl">
 
-    <input ng-model="ctrl.message">
+    <ul>
+        <li ng-repeat="c in ctrl.contacts">
+            {{c.name}}
+        </li>
+    </ul>
+
+    <hr>
+    Other stuff
+    <input ng-model="ctrl.message" class="my-input">
     <button ng-click="ctrl.action(ctrl.message)">Alert</button>
 </div>
